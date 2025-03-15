@@ -1,0 +1,38 @@
+.container {
+    box-sizing: border-box;
+    max-width: 1200px;
+    padding: 0px 20px 0px 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.button {
+    font-family: "Montserrat";
+    font-weight: 400;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 16px 16px;
+    border-radius: 50px;
+    color: #0E0E0E;
+    max-width: max-content;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    position: relative;
+}
+
+.button::after {
+    position: absolute;
+    top: 40px;
+    content: "";
+    height: 2px;
+    width: 190px;
+    background: #B1354B;
+}
+  
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 0px 40px 0px 40px;
+    }
+}

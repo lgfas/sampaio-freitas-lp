@@ -1,0 +1,24 @@
+.header-opening {
+    background-color: #9B2438;
+    color: #F7F7F7;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.header-menu {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+.header-menu-nav {
+    display: flex;
+    gap: 64px;
+}
+
