@@ -10,25 +10,15 @@
     font-family: "Montserrat";
     font-weight: 400;
     display: flex;
-    gap: 5px;
+    gap: 4px;
     align-items: center;
     padding: 16px 16px;
-    border-radius: 50px;
     color: #0E0E0E;
     max-width: max-content;
     cursor: pointer;
-    border: none;
     font-size: 18px;
-    position: relative;
-}
-
-.button::after {
-    position: absolute;
-    top: 40px;
-    content: "";
-    height: 2px;
-    width: 190px;
-    background: #B1354B;
+    border-radius: 8px;
+    border-bottom: 2px solid #9B2438;
 }
   
 @media only screen and (max-width: 768px) {
