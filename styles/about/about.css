@@ -1,0 +1,44 @@
+.about-bg {
+    background-color: #851E2E;
+    margin-top: 80px;
+    color: #F7F7F7;
+    position: relative;
+    z-index: -2;
+}
+
+.about-bg::after {
+    content: "";
+    position: absolute;
+    background: url("../../assets/logo-bg.svg") no-repeat;
+    width: 415px;
+    height: 584px;
+    z-index: -1;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 64px 0px;
+    align-items: center;
+}
+
+.about-text p {
+    margin-top: 24px;
+}
+
+.about-text h3 {
+    margin-top: 40px;
+}
+
+.about-img {
+    margin-top: 24px;
+    justify-self: center;
+}
+
+.button-about {
+    margin-top: 32px;
+    color: #FFEDED;
+}
