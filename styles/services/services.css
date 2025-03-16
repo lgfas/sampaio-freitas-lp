@@ -1,0 +1,39 @@
+.services-text {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services-cards {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+.services-card {
+    height: 340px;
+    width: 300px;
+    text-align: center;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.card-text {
+    display: flex;
+    justify-content: center; /* Mantém o texto centralizado dentro do próprio container .card-text */
+    align-items: center;
+    gap: 4px;
+    padding: 16px 32px;
+    border-radius: 8px 8px 0px 0px;
+    background-color: #851E2E;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 11px;
+    left: 50%;
+    transform: translateX(-50%); /* Move o elemento 50% para trás para centralizar */
+}
