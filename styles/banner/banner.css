@@ -1,0 +1,29 @@
+.banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 80px;
+}
+
+.banner-text {
+    padding-top: 24px;
+}
+
+.banner-text h1{
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.banner-text p {
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #595959;
+}
+
+.banner-text span {
+    font-weight: bold;
+}
+
+.banner-text-button {
+    margin-top: 24px;
+}
