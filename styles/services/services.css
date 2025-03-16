@@ -1,5 +1,5 @@
 .services-text {
-    margin-top: 80px;
+    margin-top: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,6 +10,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 24px;
+    align-items: center;
+    justify-items: center;
 }
 
 .services-card {
