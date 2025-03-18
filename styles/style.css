@@ -12,3 +12,9 @@
 
 /* About */
 @import url("./about/about.css");
+
+/* Feedbacks */
+@import url("./feedbacks/feedbacks.css");
+
+/* Form */
+@import url("./form/form.css");
