@@ -1,5 +1,6 @@
 .feedbacks-bg {
-    background: url("../../assets/background-feedbacks.png");
+    background: url("../../assets/background-feedbacks.png") no-repeat;
+    background-size: cover;
 }
 
 .feedbacks {
