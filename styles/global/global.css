@@ -1,38 +1,44 @@
 html {
     scroll-behavior: smooth;
-  }
+}
   
-  body {
+body {
     margin: 0px;
     font-family: "Montserrat";
     color: #000000;
     background: #FFEDED;
     box-sizing: border-box;
-  }
+}
   
-  h1,
-  h2,
-  h3,
-  h4,
-  ul,
-  p,
-  blockquote,
-  dd {
+h1,
+h2,
+h3,
+h4,
+ul,
+p,
+blockquote,
+dd {
     margin: 0px;
-  }
+}
   
-  ul {
+ul {
     padding: 0px;
     list-style: none;
-  }
+}
   
-  a {
+a {
     text-decoration: none;
     color: inherit;
-  }
+}
+
+button,
+input {
+  border: 0;
+  padding: 0;
+}
   
-  img {
+img {
     max-width: 100%;
     height: auto;
     display: block;
-  }
+}
