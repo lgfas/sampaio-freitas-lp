@@ -31,4 +31,11 @@
     height: 330px;
     align-content: center;
     padding: 0px 40px;
+    line-height: 1.5;
+}
+
+.feedback-box span {
+    display: block;
+    margin-top: 24px;
+    justify-self: end;
 }

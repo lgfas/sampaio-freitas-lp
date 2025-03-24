@@ -67,3 +67,12 @@
     color: #D9D9D9;
     border-bottom: 2px solid #D9D9D9;
 }
+
+.form-location {
+    display: flex;
+    gap: 8px;
+}
+
+.form-contact li+ li {
+    margin-top: 12px;
+}
