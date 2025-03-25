@@ -38,3 +38,38 @@
     margin-top: 24px;
     justify-self: center;
 }
+
+@media (max-width: 1000px) {
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .about-img-chair {
+        display: none;
+    }
+
+    .about-text {
+        padding: 0px 64px;
+    }
+}
+
+@media (max-width: 460px) {
+
+    .about {
+        gap: 16px;
+    }
+
+    .about-text p{
+        font-size: 14px;
+        margin-top: 16px;
+    }
+
+    .about-img-group {
+        display: none;
+    }
+
+    .about-img-chair {
+        display: block;
+    }
+}
+
