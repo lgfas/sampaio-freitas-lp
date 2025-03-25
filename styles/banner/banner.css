@@ -35,10 +35,54 @@
     color: #595959;
 }
 
-.banner-text span {
+.banner-text span .bold {
     font-weight: bold;
 }
 
 .banner-text-button {
     margin-top: 32px;
+}
+
+@media (max-width: 840px) {
+    .banner-text h1 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .banner-text, .banner-text p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 712px) {
+
+    .banner {
+        grid-template-columns: 1fr;
+        margin-top: 40px;
+    }
+
+    .banner-text p {
+        color: #000000;
+    }
+
+    .banner-img {
+        position: absolute;
+        z-index: -1;
+        opacity: .175;
+    }
+
+    .banner-text-button {
+        justify-self: center;
+    }
+}
+
+@media (max-width: 420px) {
+    .banner-text h1 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .banner-text, .banner-text p {
+        font-size: 12px;
+    }
 }

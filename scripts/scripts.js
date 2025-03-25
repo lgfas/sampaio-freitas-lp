@@ -36,3 +36,23 @@ window.addEventListener('click', (e) => {
       modal.classList.add('hidden');
     }
 });
+
+const toggleBtn = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.header-menu-nav');
+const toggleIcon = toggleBtn.querySelector('img');
+
+const iconOpen = './assets/menu-hamburguer.svg'; // ícone padrão (hambúrguer)
+const iconClose = './assets/menu-close.svg';         // ícone de fechar
+
+toggleBtn.addEventListener('click', () => {
+  menu.classList.toggle('active');
+
+  // Alterna entre os ícones
+  if (menu.classList.contains('active')) {
+    toggleIcon.src = iconClose;
+    toggleBtn.setAttribute('aria-label', 'Fechar menu');
+  } else {
+    toggleIcon.src = iconOpen;
+    toggleBtn.setAttribute('aria-label', 'Abrir menu');
+  }
+});

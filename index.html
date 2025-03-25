@@ -26,6 +26,10 @@
                 <div>
                     <img src="./assets/logo-sampaio-freitas.svg" alt="">
                 </div>
+
+                <button class="menu-toggle" aria-label="Abrir menu">
+                    <img src="./assets/menu-hamburguer.svg" alt="Ícone de menu">
+                </button>                  
                 
                 <div>
                     <nav>
@@ -38,7 +42,7 @@
                 </div>
 
                 <div>
-                    <a href="" class="button">
+                    <a href="" class="button header-menu-button">
                         <img src="./assets/message-chat.svg" alt="">
                         Entrar em contato
                     </a>
@@ -55,15 +59,21 @@
                 <ul>
                     <li>
                         <img src="./assets/check-box.svg" alt="">
-                        Mais de <span>25 Anos de Experiência</span>
+                        <span class="text">
+                            Mais de <span class="bold">25 Anos de Experiência</span>
+                        </span>
                     </li>
                     <li>
                         <img src="./assets/check-box.svg" alt="">
-                        Atendimento <span>Humanizado</span> e 100% <span>Personalizado</span>
+                        <span class="text">
+                            Atendimento <span class="bold">Humanizado</span> e 100% <span class="bold">Personalizado</span>
+                        </span>
                     </li>
                     <li>
                         <img src="./assets/check-box.svg" alt="">
-                        Especialistas em <span>Previdênciário</span> e Direito dos <span>Servidores Públicos</span>
+                        <span class="text">
+                            Especialistas em <span class="bold">Previdênciário</span> e Direito dos <span class="bold">Servidores Públicos</span>
+                        </span>
                     </li>
                 </ul>
                 <div class="banner-text-button">
@@ -281,7 +291,7 @@
                 </div>
             </div>
             <div class="form-div">
-                <form id="form" class="form-camps" action="">
+                <form id="form" class="form-camps" action="enviar.php" method="POST">
                     <div>
                       <label for="nome">Nome:</label>
                       <input type="text" id="nome" name="nome" placeholder="Seu nome">
@@ -298,7 +308,7 @@
                       <label for="mensagem">Como podemos te ajudar?</label>
                       <textarea rows="1" id="mensagem" name="mensagem" placeholder="Assunto"></textarea>
                     </div>
-                    <button class="button button-form">
+                    <button class="button button-form" type="submit">
                         <img src="./assets/chat-pink.svg" alt="">
                         Entrar em contato
                     </button>

@@ -94,4 +94,65 @@
 .close-btn:hover {
     color: #000000;
 }
-  
+
+@media (max-width: 1000px) {
+
+    .services-text {
+        gap: 8px;
+    }
+
+    .services-text h2 {
+        font-size: 18px;
+    }
+
+    .services-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .services-text h2 {
+        font-size: 16px;
+    }
+
+    .services-button {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 675px) {
+
+    .services-card {
+        height: 226.67px;
+        width: 200px;
+    }
+
+    .card-text {
+        bottom: 7px;
+    }
+
+    .card-text p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 488px) {
+
+    .services-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .services-card {
+        height: 340px;
+        width: 300px;
+    }
+
+    .card-text {
+        bottom: 11px;
+    }
+
+    .card-text p {
+        font-size: 14px;
+    }
+}

@@ -21,8 +21,22 @@
     border-bottom: 2px solid #9B2438;
 }
   
-@media only screen and (max-width: 768px) {
+@media (max-width:840px) {
     .container {
         padding: 0px 40px 0px 40px;
+    }
+
+    .button {
+        font-size: 16px;
+        padding: 8px 8px;
+    }
+}
+
+@media (max-width:720px) {
+    
+
+    .button {
+        font-size: 14px;
+        padding: 8px 8px;
     }
 }
