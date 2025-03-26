@@ -56,3 +56,46 @@ toggleBtn.addEventListener('click', () => {
     toggleBtn.setAttribute('aria-label', 'Abrir menu');
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const testimonials = [
+      {
+          text: `"A razão de ter uma Assessoria Jurídica na nossa instituição se deu pela segurança nos encaminhamentos de alguns eventos. E o escritório Sampaio & Freitas foi muito além – competência, transparência e compromisso – resumem o que sentimos sobre  a sua atuação advocatícia, sobretudo, pela disponibilidade em ouvir e direcionar  da melhor forma possível as decisões. 
+  Somos muito gratos pela Dra. Walena Freitas nos acompanhar há 15 anos. A experiência exitosa nos pareceres, na consultoria  e nas lides,  em todas as vezes que foi acionada, demonstram claramente o acerto nessa contratação. Recomendo de olhos fechados."`,
+          author: "- Elsa Balluz, Gestora Escolar"
+      },
+      {
+          text: `“Confiança, dedicação e excelência definem o trabalho da Sampaio & Freitas Advogadas. Sempre atenciosas, conduzem nossas demandas com habilidade e estratégia, garantindo resultados satisfatórios. Sua seriedade, compromisso e competência fazem toda a diferença. Sou grato por sua atuação impecável!"`,
+          author: "- José Nilton, Espaço Gourmet - Empresa de Varejo"
+      },
+      {
+          text: `"Profissionais extremamente competentes e atenciosos. Me senti acolhida e bem representada. Recomendo sem dúvidas!"`,
+          author: "- Mariana Souza"
+      }
+  ];
+
+  let currentIndex = 0;
+  const feedbackText = document.querySelector(".feedback-box p");
+  const feedbackAuthor = document.querySelector(".feedback-box span");
+  const arrowLeft = document.querySelector(".arrow-left");
+  const arrowRight = document.querySelector(".arrow-right");
+
+  function updateFeedback(index) {
+      feedbackText.innerHTML = testimonials[index].text;
+      feedbackAuthor.innerHTML = testimonials[index].author;
+  }
+
+  arrowLeft.addEventListener("click", () => {
+      currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+      updateFeedback(currentIndex);
+  });
+
+  arrowRight.addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % testimonials.length;
+      updateFeedback(currentIndex);
+  });
+
+  // Inicializar com o primeiro depoimento
+  updateFeedback(currentIndex);
+});
+
