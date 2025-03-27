@@ -77,6 +77,12 @@
     margin-top: 12px;
 }
 
+#response-message {
+    padding: 16px 0px;
+    border-radius: 8px;
+    color: #D9D9D9;
+}
+
 @media (max-width: 650px) {
     .form-text {
         font-size: 14px;

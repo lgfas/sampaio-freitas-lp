@@ -56,16 +56,29 @@
 
 @media (max-width: 712px) {
 
+    .banner-bg {
+        background-color: #9B2438;
+    }
+
     .banner {
         grid-template-columns: 1fr;
-        margin-top: 40px;
+        margin-top: 12px;
+    }
+
+    .banner-text {
+        padding: 40px 0px;
+    }
+
+    .banner-text h1 {
+        color: #FFFFFF;
     }
 
     .banner-text p {
-        color: #000000;
+        color: #FFFFFF;
     }
 
     .banner-img {
+        display: none;
         position: absolute;
         z-index: -1;
         opacity: .175;
@@ -73,6 +86,15 @@
 
     .banner-text-button {
         justify-self: center;
+    }
+
+    .banner-text li {
+        color: #FFFFFF;
+    }
+
+    .banner-button {
+        color: #D9D9D9;
+        border-bottom: 2px solid #D9D9D9;
     }
 }
 

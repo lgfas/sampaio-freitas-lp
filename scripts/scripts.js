@@ -4,12 +4,12 @@ const modalDescription = document.getElementById('modal-description');
 const closeBtn = document.querySelector('.close-btn');
 
 const serviceDescriptions = {
-    "Abono de Permanência": "É um valor mensal pago ao servidor público que já cumpriu os requisitos para se aposentar, mas opta por continuar em atividade. Esse abono corresponde, em regra, ao valor da contribuição previdenciária que o servidor seguiria recolhendo, funcionando como forma de incentivo à permanência no serviço público.",
-    "FUNBEN": "Refere-se aos valores descontados no contracheque dos servidores vinculados ao Fundo de Benefícios dos Servidores do Estado do Maranhão (FUNBEN). Em alguns casos, esses descontos podem continuar indevidamente após a aposentadoria ou serem realizados sem respaldo legal. Por isso, é importante verificar a legalidade e a regularidade dessas cobranças.",
-    "Lincença Prêmio": "A licença-prêmio é um direito do servidor que, após determinado período de tempo em exercício sem faltas injustificadas, adquire o direito a um afastamento remunerado. Quando essa licença não é usufruída durante a atividade e o servidor se aposenta, é possível solicitar sua conversão em indenização.",
-    "Averbação de Tempo de Serviço": "Consiste na inclusão, no registro funcional do servidor, de períodos de tempo de serviço prestados em outros vínculos públicos. Essa averbação é necessária para que esses períodos sejam considerados para efeitos de aposentadoria e outros direitos funcionais.",
-    "Defesa em Processos Administrativos": "É o acompanhamento jurídico oferecido ao servidor que responde a um processo administrativo disciplinar. O PAD é instaurado quando há suspeita de infração funcional, e o servidor tem direito à ampla defesa e ao contraditório durante todas as fases do procedimento.",
-    "Correções/Revisões Salariais": "Trata-se da verificação de possíveis erros ou omissões na folha de pagamento do servidor, como o não pagamento de gratificações, incorreções em reajustes ou falhas na progressão funcional. Caso sejam identificadas irregularidades, é possível requerer a correção e o pagamento dos valores retroativos.",
+    "Abono de Permanência": "Você já pode se aposentar, mas continua trabalhando? Então pode ter direito a receber um valor extra todo mês: o abono de permanência, é um valor mensal pago ao servidor público que já cumpriu os requisitos para se aposentar, mas opta por continuar em atividade. Nós analisamos seu caso e buscamos garantir esse benefício!",
+    "FUNBEN": "O FUNBEN não pode ser descontado do seu salário de forma irregular! O Fundo de Benefícios dos Servidores do Estado do Maranhão oferece assistência médica aos servidores e seus dependentes que solicitam a inclusão no plano. Em alguns casos, esses descontos são realizados indevidamente, sem que o servidor tenha solicitado, o que é proibido. Se isso está acontecendo com você, saiba que é possível recuperar o que foi cobrado indevidamente.",
+    "Lincença Prêmio": "Se você não gozou sua licença-prêmio antes de se aposentar, tem direito de receber esse tempo em dinheiro. É um direito seu e pode fazer diferença no seu orçamento. Ajudamos a transformar esse tempo não gozado em indenização.",
+    "Averbação de Tempo de Serviço": "Consiste na inclusão, no registro funcional do servidor, de períodos de tempo de serviço prestados em outros vínculos. Essa averbação é necessária para que esses períodos sejam considerados para efeitos de aposentadoria e outros direitos funcionais.",
+    "Defesa em Processos Administrativos": "Se você recebeu uma notificação de PAD, precisa agir com cautela. Um bom acompanhamento jurídico pode evitar punições injustas ou até demissão. Nossa equipe oferece defesa técnica completa para proteger sua carreira e seus direitos.",
+    "Correções/Revisões Salariais": "Você pode estar recebendo menos do que deveria. Erros na remuneração, falhas na progressão, cortes em gratificações e outras falhas são mais comuns do que se imagina. Nós analisamos sua ficha funcional e buscamos na Justiça os valores que você tem direito a receber.",
     "Planejamento Previdenciário": "É o estudo detalhado da vida contributiva do segurado, com o objetivo de identificar o melhor momento para a aposentadoria, o tipo de benefício mais vantajoso e os requisitos já cumpridos ou ainda pendentes. Permite uma tomada de decisão consciente e segura sobre o futuro previdenciário.",
     "Aposentadorias": "São benefícios pagos pelo INSS aos segurados que atingem os requisitos legais de idade, tempo de contribuição ou condições especiais de trabalho. Existem diferentes modalidades, como a aposentadoria por idade, por tempo de contribuição, especial e por invalidez.",
     "Pensão por Morte": "Benefício destinado aos dependentes do segurado do INSS que falece. Pode ser concedido ao cônjuge, companheiro(a), filhos menores de idade ou inválidos, entre outros. O valor e a duração do benefício variam conforme o tempo de contribuição do segurado e a idade do dependente.",
@@ -68,10 +68,6 @@ document.addEventListener("DOMContentLoaded", () => {
       {
           text: `“Confiança, dedicação e excelência definem o trabalho da Sampaio & Freitas Advogadas. Sempre atenciosas, conduzem nossas demandas com habilidade e estratégia, garantindo resultados satisfatórios. Sua seriedade, compromisso e competência fazem toda a diferença. Sou grato por sua atuação impecável!"`,
           author: "- José Nilton, Espaço Gourmet - Empresa de Varejo"
-      },
-      {
-          text: `"Profissionais extremamente competentes e atenciosos. Me senti acolhida e bem representada. Recomendo sem dúvidas!"`,
-          author: "- Mariana Souza"
       }
   ];
 
@@ -100,3 +96,62 @@ document.addEventListener("DOMContentLoaded", () => {
   updateFeedback(currentIndex);
 });
 
+function updateImageSource() {
+  const images = document.querySelectorAll(".banner-check");
+  
+  images.forEach(image => {
+    if (window.innerWidth < 720) {
+      image.src = "./assets/check-box-white.svg"; // Novo ícone para telas menores
+    } else {
+      image.src = "./assets/check-box.svg"; // Ícone padrão para telas maiores
+    }
+  });
+}
+
+// Chama a função ao carregar a página
+updateImageSource();
+
+// Adiciona um listener para monitorar a mudança de tamanho da tela
+window.addEventListener("resize", updateImageSource);
+
+
+function updateButtonImage() {
+  const buttonImage = document.querySelector(".banner-button img");
+
+  if (buttonImage) {
+    if (window.innerWidth < 720) {
+      buttonImage.src = "./assets/chat-pink.svg"; // Novo ícone para telas menores
+    } else {
+      buttonImage.src = "./assets/chat.svg"; // Ícone padrão para telas maiores
+    }
+  }
+}
+
+// Chama a função ao carregar a página
+updateButtonImage();
+
+// Adiciona um listener para monitorar a mudança de tamanho da tela
+window.addEventListener("resize", updateButtonImage);
+
+document.getElementById("form").addEventListener("submit", function(event) {
+  event.preventDefault(); // Impede o comportamento padrão (o envio do formulário)
+
+  var formData = new FormData(this); // Captura todos os dados do formulário
+
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", "enviar.php", true); // Configura o envio para o arquivo PHP
+
+  // Quando o envio for completado, processa a resposta
+  xhr.onload = function() {
+      if (xhr.status === 200) {
+          // Exibe a resposta do servidor na página
+          document.getElementById("response-message").innerHTML = xhr.responseText;
+      } else {
+          // Caso ocorra algum erro no envio
+          document.getElementById("response-message").innerHTML = "Erro ao enviar mensagem!";
+      }
+  };
+
+  // Envia os dados para o servidor
+  xhr.send(formData);
+});

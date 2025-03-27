@@ -36,8 +36,10 @@
 
 .copyright-footer {
     margin-top: 24px;
+    padding: 16px;
     text-align: center;
     background-color: #913442;
+    color: #FFFFFF;
 }
 
 @media (max-width: 930px) {

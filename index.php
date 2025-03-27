@@ -34,15 +34,15 @@
                 <div>
                     <nav>
                         <ul class="header-menu-nav">
-                            <li><a href="">Serviços</a></li>
-                            <li><a href="">Sobre</a></li>
-                            <li><a href="">Localização</a></li>
+                            <li><a href="#services">Serviços</a></li>
+                            <li><a href="#about">Sobre</a></li>
+                            <li><a href="#location">Localização</a></li>
                         </ul>
                     </nav>
                 </div>
 
                 <div>
-                    <a href="" class="button header-menu-button">
+                    <a href="https://wa.me/559899835437?text=Olá,%20gostaria%20de%20saber%20como%20o%20escritório%20pode%20me%20ajudar.%20Poderia%20me%20dar%20mais%20informações?" class="button header-menu-button">
                         <img src="./assets/message-chat.svg" alt="">
                         Entrar em contato
                     </a>
@@ -51,33 +51,33 @@
         </div>
     </header>
 
-    <main class="banner-bg">
+    <main id="banner" class="banner-bg">
         <div class="banner container">
             <div class="banner-text">
                 <h1>Defendendo seus direitos, assegurando seu futuro.</h1>
                 <p>No escritório <span>Sampaio & Freitas Advogadas Associadas</span>, oferecemos um serviço especializado em <span>direitos dos servidores públicos e dos segurados do INSS</span>, com foco em garantir que você receba todos os benefícios a que tem direito. Nossa equipe está aqui para te apoiar em cada etapa do processo.</p>
                 <ul>
                     <li>
-                        <img src="./assets/check-box.svg" alt="">
+                        <img class="banner-check" src="./assets/check-box.svg" alt="">
                         <span class="text">
                             Mais de <span class="bold">25 Anos de Experiência</span>
                         </span>
                     </li>
                     <li>
-                        <img src="./assets/check-box.svg" alt="">
+                        <img class="banner-check" src="./assets/check-box.svg" alt="">
                         <span class="text">
                             Atendimento <span class="bold">Humanizado</span> e 100% <span class="bold">Personalizado</span>
                         </span>
                     </li>
                     <li>
-                        <img src="./assets/check-box.svg" alt="">
+                        <img class="banner-check" src="./assets/check-box.svg" alt="">
                         <span class="text">
                             Especialistas em <span class="bold">Previdênciário</span> e Direito dos <span class="bold">Servidores Públicos</span>
                         </span>
                     </li>
                 </ul>
                 <div class="banner-text-button">
-                    <a href="" class="button">
+                    <a href="https://wa.me/559899835437?text=Olá,%20gostaria%20de%20saber%20como%20o%20escritório%20pode%20me%20ajudar.%20Poderia%20me%20dar%20mais%20informações?" class="button banner-button">
                         <img src="./assets/chat.svg" alt="">
                         Fale com uma Advogada Agora!
                     </a>
@@ -89,7 +89,7 @@
         </div>
     </main>
 
-    <section class="services-bg">
+    <section id="services" class="services-bg">
 
         <div id="service-modal" class="modal hidden">
             <div class="modal-content">
@@ -104,7 +104,7 @@
             <div class="services-text">
                 <h2>SERVIDOR PÚBLICOS - Como podemos te ajudar?</h2>
                 <div>
-                    <a href="" class="button">
+                    <a href="#form-section" class="button">
                         <img src="./assets/click.svg" alt="">
                         Quero meu direito!
                     </a>
@@ -112,7 +112,7 @@
             </div>
 
             <div class="services-cards">
-                <div class="services-card">
+                <div id="abono-permanencia" class="services-card">
                     <img src="./assets/card-abono-permanencia.png" alt="">
                     <div class="card-text">
                         <img src="./assets/logo-sf-white.svg" alt="">
@@ -120,7 +120,7 @@
                     </div>
                 </div>
 
-                <div class="services-card">
+                <div id="funben" class="services-card">
                     <img src="./assets/card-funben.png" alt="">
                     <div class="card-text">
                         <img src="./assets/logo-sf-white.svg" alt="">
@@ -128,7 +128,7 @@
                     </div>
                 </div>
 
-                <div class="services-card">
+                <div id="licenca-premio" class="services-card">
                     <img src="./assets/card-licenca-premio.png" alt="">
                     <div class="card-text">
                         <img src="./assets/logo-sf-white.svg" alt="">
@@ -136,7 +136,7 @@
                     </div>
                 </div>
 
-                <div class="services-card">
+                <div id="averbacao-tempo-servico" class="services-card">
                     <img src="./assets/card-averbacao-tempo-servico.png" alt="">
                     <div class="card-text">
                         <img src="./assets/logo-sf-white.svg" alt="">
@@ -144,7 +144,7 @@
                     </div>
                 </div>
 
-                <div class="services-card">
+                <div id="defesa-processos-administrativos" class="services-card">
                     <img src="./assets/card-defesa-processos-administrativos.png" alt="">
                     <div class="card-text">
                         <img src="./assets/logo-sf-white.svg" alt="">
@@ -152,7 +152,7 @@
                     </div>
                 </div>
 
-                <div class="services-card">
+                <div id="correcoes-revisoes-salariais" class="services-card">
                     <img src="./assets/card-correcoes-revisoes-salariais.png" alt="">
                     <div class="card-text">
                         <img src="./assets/logo-sf-white.svg" alt="">
@@ -164,14 +164,14 @@
             <div class="services-text">
                 <h2>SEGURADOS DO INSS - O que podemos fazer por você?</h2>
                 <div>
-                    <a href="" class="button">
+                    <a href="#form-section" class="button">
                         <img src="./assets/click.svg" alt="">
                         Quero meu direito!
                     </a>
                 </div>
             </div>
 
-            <div class="services-cards">
+            <div id="planejamento-previdenciario" class="services-cards">
                 <div class="services-card">
                     <img src="./assets/card-planejamento-previdenciario.png" alt="">
                     <div class="card-text">
@@ -180,7 +180,7 @@
                     </div>
                 </div>
 
-                <div class="services-card">
+                <div id="aposentadorias" class="services-card">
                     <img src="./assets/card-aposentadoria.png" alt="">
                     <div class="card-text">
                         <img src="./assets/logo-sf-white.svg" alt="">
@@ -188,7 +188,7 @@
                     </div>
                 </div>
 
-                <div class="services-card">
+                <div id="pensao-morte" class="services-card">
                     <img src="./assets/card-pensao-morte.png" alt="">
                     <div class="card-text">
                         <img src="./assets/logo-sf-white.svg" alt="">
@@ -196,7 +196,7 @@
                     </div>
                 </div>
 
-                <div class="services-card">
+                <div id="auxilios-incapacidade" class="services-card">
                     <img src="./assets/card-auxilio-acidente.png" alt="">
                     <div class="card-text">
                         <img src="./assets/logo-sf-white.svg" alt="">
@@ -204,7 +204,7 @@
                     </div>
                 </div>
 
-                <div class="services-card">
+                <div id="bpcloas" class="services-card">
                     <img src="./assets/card-bpcloas.png" alt="">
                     <div class="card-text">
                         <img src="./assets/logo-sf-white.svg" alt="">
@@ -212,7 +212,7 @@
                     </div>
                 </div>
 
-                <div class="services-card">
+                <div id="revisao-beneficios" class="services-card">
                     <img src="./assets/card-revisao-beneficios.png" alt="">
                     <div class="card-text">
                         <img src="./assets/logo-sf-white.svg" alt="">
@@ -223,7 +223,7 @@
         </div>
     </section>
 
-    <section class="about-bg">
+    <section id="about" class="about-bg">
         <div class="about container">
             <div class="about-text">
                 <h2>Quem somos?</h2>
@@ -245,7 +245,7 @@
         </div>
     </section>
 
-    <section class="feedbacks-bg">
+    <section id="feedbacks" class="feedbacks-bg">
         <div class="feedbacks container">
             <h2>Depoimentos</h2>
             <div class="feedback-div">
@@ -263,7 +263,7 @@
         </div>
     </section>
 
-    <section class="form-bg">
+    <section id="form-section" class="form-bg">
         <div class="form container">
             <div class="form-text">
                 <div>
@@ -278,7 +278,7 @@
                     <div class="form-contact">
                         <ul>
                             <li>
-                                <a class="footer-contact" href=""><img src="./assets/icon-phone-red.svg" alt="">(98) 99983-5437</a>
+                                <a class="footer-contact" href="https://wa.me/559899835437?text=Olá,%20gostaria%20de%20saber%20como%20o%20escritório%20pode%20me%20ajudar.%20Poderia%20me%20dar%20mais%20informações?"><img src="./assets/icon-phone-red.svg" alt="">(98) 99983-5437</a>
                             </li>
                             <li>
                                 <a class="footer-contact" href="https://www.instagram.com/sampaioefreitas.adv?igsh=MWc3dG8yY2tveDM3aA== "><img src="./assets/icon-instagram-red.svg" alt="">@sampaioefreitas.adv</a>
@@ -291,7 +291,7 @@
                 </div>
             </div>
             <div class="form-div">
-                <form id="form" class="form-camps" action="enviar.php" method="POST">
+                <form id="form" class="form-camps" method="POST">
                     <div>
                       <label for="nome">Nome:</label>
                       <input type="text" id="nome" name="nome" placeholder="Seu nome">
@@ -313,6 +313,8 @@
                         Entrar em contato
                     </button>
                   </form>
+
+                  <div id="response-message"></div>
             </div>
         </div>
     </section>
@@ -326,26 +328,26 @@
         </div>
     </section>
 
-    <footer class="footer-bg">
+    <footer id="footer" class="footer-bg">
         <div class="footer container">
             <div>
                 <h4>Nossos serviços:</h4>
                 <div class="footer-services">
                     <ul>
-                        <li><a href="">Abono de Permanência</a></li>
-                        <li><a href="">FUNBEN</a></li>
-                        <li><a href="">Lincença Prêmio</a></li>
-                        <li><a href="">Averbação de Tempo de Serviço</a></li>
-                        <li><a href="">Defesa em Processos Administrativos</a></li>
-                        <li><a href="">Correções/Revisões Salariais</a></li>
+                        <li><a href="#abono-permanencia">Abono de Permanência</a></li>
+                        <li><a href="#funben">FUNBEN</a></li>
+                        <li><a href="#licenca-premio">Lincença Prêmio</a></li>
+                        <li><a href="#averbacao-tempo-servico">Averbação de Tempo de Serviço</a></li>
+                        <li><a href="#defesa-processos-administrativos">Defesa em Processos Administrativos</a></li>
+                        <li><a href="#correcoes-revisoes-salariais">Correções/Revisões Salariais</a></li>
                     </ul>
                     <ul>
-                        <li><a href="">Planejamento Previdenciário</a></li>
-                        <li><a href="">Aposentadorias</a></li>
-                        <li><a href="">Pensão por Morte</a></li>
-                        <li><a href="">Auxílios por Incapacidade</a></li>
-                        <li><a href="">BPC/LOAS</a></li>
-                        <li><a href="">Revisão de Benefícios</a></li>
+                        <li><a href="#planejamento-previdenciario">Planejamento Previdenciário</a></li>
+                        <li><a href="#aposentadorias">Aposentadorias</a></li>
+                        <li><a href="#pensao-morte">Pensão por Morte</a></li>
+                        <li><a href="#auxilios-incapacidade">Auxílios por Incapacidade</a></li>
+                        <li><a href="#bpcloas">BPC/LOAS</a></li>
+                        <li><a href="#revisao-beneficios">Revisão de Benefícios</a></li>
                     </ul>
                 </div>
             </div>
@@ -357,7 +359,7 @@
                 <h4>Entre em contato:</h4>
                 <ul>
                     <li>
-                        <a class="footer-contact" href=""><img src="./assets/icon-phone.svg" alt="">(98) 99983-5437</a>
+                        <a class="footer-contact" href="https://wa.me/559899835437?text=Olá,%20gostaria%20de%20saber%20como%20o%20escritório%20pode%20me%20ajudar.%20Poderia%20me%20dar%20mais%20informações?"><img src="./assets/icon-phone.svg" alt="">(98) 99983-5437</a>
                     </li>
                     <li>
                         <a class="footer-contact" href="https://www.instagram.com/sampaioefreitas.adv?igsh=MWc3dG8yY2tveDM3aA== "><img src="./assets/icon-instagram.svg" alt="">@sampaioefreitas.adv</a>
